@@ -60,10 +60,11 @@ body {
 .about-us {
     width: 80%;
     margin-top: 20px; /* Adds space below navbar */
-    text-align: left;
+    text-align: center;
     font-size: 1.2em;
     padding: 20px;
     max-width: 800px;
+    align-items: center;
 }
 
 h1 {

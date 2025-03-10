@@ -142,3 +142,59 @@ p {
     animation: glitch 0.2s infinite;
     filter: hue-rotate(180deg) contrast(1.5);
 }
+
+/* Small screens: Adjustments for mobile devices */
+@media (max-width: 768px) {
+    .content {
+        width: 90%; /* Prevent text from touching screen edges */
+    }
+
+    h1 {
+        font-size: 2em; /* Reduce font size for smaller screens */
+    }
+
+    p {
+        font-size: 1.2em;
+        margin-bottom: 30px;
+    }
+
+    .navbar ul {
+        flex-direction: column; /* Stack navbar items vertically */
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    .navbar li {
+        margin: 10px 0;
+    }
+
+    .navbar img {
+        width: 80px; /* Shrink icons */
+        height: 80px;
+    }
+}
+
+/* Very small screens: Compact layout for screens smaller than 480px */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    p {
+        font-size: 1em;
+        margin-bottom: 20px;
+    }
+
+    .navbar {
+        bottom: 10px; /* Raise navbar slightly */
+    }
+
+    .navbar img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .navbar a {
+        font-size: 1em;
+    }
+}

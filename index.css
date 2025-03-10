@@ -109,7 +109,6 @@ p {
     }
 }
 
-/* Apply different delays for each icon */
 .navbar li:nth-child(1) img {
     animation: float 3s ease-in-out infinite;
 }

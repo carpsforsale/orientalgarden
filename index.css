@@ -96,3 +96,36 @@ p {
         box-shadow: 0 0 10px rgba(0, 255, 0, 0.7), 0 0 20px rgba(0, 255, 0, 0.7);
     }
 }
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Apply different delays for each icon */
+.navbar li:nth-child(1) img {
+    animation: float 3s ease-in-out infinite;
+}
+
+.navbar li:nth-child(2) img {
+    animation: float 3.5s ease-in-out infinite;
+}
+
+.navbar li:nth-child(3) img {
+    animation: float 4s ease-in-out infinite;
+}
+
+.navbar li:nth-child(4) img {
+    animation: float 4.5s ease-in-out infinite;
+}
+
+.navbar li:nth-child(5) img {
+    animation: float 5s ease-in-out infinite;
+}
